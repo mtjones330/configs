@@ -1,0 +1,181 @@
+{
+	"files.trimTrailingWhitespace": true,
+	"editor.fontSize": 14,
+	"workbench.startupEditor": "newUntitledFile",
+	"[typescript]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"breadcrumbs.enabled": true,
+	"editor.minimap.enabled": false,
+	"[html]": {
+			"editor.defaultFormatter": "vscode.html-language-features"
+	},
+	"editor.parameterHints.enabled": false,
+	"[javascript]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"editor.multiCursorModifier": "ctrlCmd",
+
+	"git.autofetch": false,
+	"workbench.activityBar.visible": true,
+	"workbench.editor.enablePreview": false,
+
+	"vim.leader": " ",
+	"vim.insertModeKeyBindings": [
+			{
+					"before": ["k", "j"],
+					"after": ["<Esc>"]
+			}
+	],
+	"vim.normalModeKeyBindings": [
+			{
+					"before": ["<leader>", "v"],
+					"after": ["<C-w>", "v"]
+			},
+			{
+					"before": ["<leader>", "s"],
+					"after": ["<C-w>", "s"]
+			},
+			{
+					"before": ["<leader>", "h"],
+					"after": ["<C-w>", "h"]
+			},
+			{
+					"before": ["<leader>", "j"],
+					"after": ["<C-w>", "j"]
+			},
+			{
+					"before": ["<leader>", "k"],
+					"after": ["<C-w>", "k"]
+			},
+			{
+					"before": ["<leader>", "l"],
+					"after": ["<C-w>", "l"]
+			},
+			{
+					"before": ["Z", "Z"],
+					"commands": ["workbench.action.files.save", "workbench.action.closeActiveEditor"]
+			},
+			{
+					"before": ["<leader>", "a"],
+					"commands": ["workbench.action.closeEditorsInGroup"]
+			},
+			{
+					"before": ["<leader>", "+"],
+					"commands": ["workbench.action.increaseViewSize"]
+			},
+			{
+					"before": ["<leader>", "-"],
+					"commands": ["workbench.action.decreaseViewSize"]
+			},
+			{
+					"before": ["J"],
+					"commands": ["editor.action.moveLinesDownAction"]
+			},
+			{
+					"before": ["K"],
+					"commands": ["editor.action.moveLinesUpAction"]
+			},
+			{
+					"before": ["g", "d"],
+					"commands": ["editor.action.revealDefinition"]
+			},
+			{
+					"before": ["<leader>", "w"],
+					"commands": ["workbench.action.files.save"]
+			},
+			{
+					"before": ["<leader>", "."],
+					"commands": ["editor.action.quickFix"]
+			},
+			{
+					"before": ["<leader>", "t"],
+					"commands": ["extension.switchTemplate"]
+			},
+			{
+					"before": ["<leader>", "o"],
+					"commands": ["workbench.action.closeOtherEditors"]
+			},
+			{
+					"before" : ["u"],
+					"commands" : [
+							"undo"
+					]
+			},
+			{
+					"before" : ["<C-r>"],
+					"commands" : [
+							"redo"
+					]
+			},
+			{
+					"before": ["<leader>", "r"],
+					"commands": ["editor.action.rename"]
+			},
+			{
+					"before": ["<leader>", "b"],
+					"commands": ["workbench.action.tasks.build"]
+			},
+			{
+					"before": ["<leader>", "x"],
+					"commands": ["workbench.action.closeOtherEditors"]
+			},
+			{
+					"before": ["<leader>", "'" ],
+					"after": ["c", "i", "w", "'", "<C-r>", "\"", "<Esc>"]
+			},
+			{
+					"before": ["<leader>", "\"" ],
+					"after": ["c", "i", "w", "\"", "<C-r>", "\"", "<Esc>"]
+			}
+	],
+	"vim.visualModeKeyBindings": [
+			{
+					"before": ["J"],
+					"commands": ["editor.action.moveLinesDownAction"]
+			},
+			{
+					"before": ["K"],
+					"commands": ["editor.action.moveLinesUpAction"]
+			},
+			{
+					"before": ["<leader>", "'" ],
+					"after": ["c", "'", "<C-r>", "\"", "<Esc>"]
+			},
+			{
+					"before": ["<leader>", "\"" ],
+					"after": ["c", "\"", "<C-r>", "\"", "<Esc>"]
+			}
+	],
+
+	"files.exclude": {
+			"**/node_modules": true,
+			"**/.classpath": true,
+			"**/.project": true,
+			"**/.settings": true,
+			"**/.factorypath": true
+	},
+	"editor.lineNumbers": "relative",
+	"typescript.preferences.quoteStyle": "single",
+	"[json]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"editor.renderWhitespace": "none",
+	"window.zoomLevel": 0,
+	"angular.experimental-ivy": true,
+	"editor.cursorStyle": "line",
+	"editor.insertSpaces": false,
+	"editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+	"editor.wordWrap": "off",
+	"editor.suggestSelection": "first",
+	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+	"editor.tabSize": 2,
+	"cSpell.userWords": [
+			"formcontrolname",
+			"formgroupname",
+			"setpoint",
+			"timestep"
+	],
+	"diffEditor.ignoreTrimWhitespace": false,
+	"security.workspace.trust.untrustedFiles": "open",
+}
