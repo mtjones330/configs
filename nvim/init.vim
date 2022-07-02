@@ -44,7 +44,7 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 \| endif
 
 call plug#begin('~/.vim/plugged')
-  Plug 'morhetz/gruvbox'
+  Plug 'gruvbox-community/gruvbox'
 call plug#end()
 
 colorscheme gruvbox
