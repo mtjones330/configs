@@ -1,19 +1,28 @@
 syntax on
 
+set nu
+set nohlsearch
+set incsearch
+set noerrorbells
 set backspace=indent,eol,start
 set relativenumber
 set nowrap
+set hidden
 set tabstop=2 softtabstop=2
 set shiftwidth=2
 set smartindent
 set expandtab
-set incsearch
 set smartcase
 set ignorecase
 set noswapfile
 set nobackup
+set undodir=~/.vim/undodir
+set undofile
 set ruler
 set laststatus=2
+set signcolumn=yes
+set colorcolumn=120
+set scrolloff=8
 
 let g:netrw_banner = 0
 let mapleader = " "
@@ -28,6 +37,9 @@ nnoremap <leader>j <C-w>j
 nnoremap <leader>k <C-w>k
 nnoremap <leader>l <C-w>l
 nnoremap <leader>e :E<CR>
+nnoremap <leader>t :tabnew<Cr>
+nnoremap H gT
+nnoremap L gt
 
 vnoremap K :m '<-2<CR>gv
 vnoremap J :m '>+1<CR>gv
