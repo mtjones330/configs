@@ -97,7 +97,11 @@ require('bufferline').setup{
 
 require('telescope').setup{}
 
-require('nvim-tree').setup{}
+require('nvim-tree').setup{
+  renderer = {
+    group_empty = true,
+  }
+}
 
 require('toggleterm').setup{
   open_mapping = [[<c-\>]],
