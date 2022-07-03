@@ -30,7 +30,7 @@ set colorcolumn=120
 set scrolloff=8
 set cursorline
 set cursorlineopt=number
-
+set mouse=a
 let g:netrw_banner = 0
 let mapleader = " "
 
@@ -38,15 +38,19 @@ imap kj <ESC>
 
 nnoremap <leader>v <C-w>v
 nnoremap <leader>s <C-w>s
-nnoremap <leader>q :bd<CR>
 nnoremap <leader>h <C-w>h
 nnoremap <leader>j <C-w>j
 nnoremap <leader>k <C-w>k
 nnoremap <leader>l <C-w>l
-nnoremap <leader>e :E<CR>
-nnoremap <leader>t :tabnew<Cr>
+nnoremap <leader>q :Bd<CR> 
+nnoremap <leader>w :w<CR>
+nnoremap <leader>e :NvimTreeToggle<CR>
+nnoremap <leader>t :enew<Cr>
 nnoremap <silent>H :BufferLineCyclePrev<CR>
 nnoremap <silent>L :BufferLineCycleNext<CR> 
+
+nnoremap <silent><C-h> :BufferLineMovePrev<CR>
+nnoremap <silent><C-l> :BufferLineMoveNext<CR>
 
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
@@ -62,20 +66,34 @@ call plug#begin('~/.vim/plugged')
   Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-telescope/telescope.nvim'
+  Plug 'moll/vim-bbye'
+  Plug 'kyazdani42/nvim-tree.lua'
+  Plug 'akinsho/toggleterm.nvim'
 call plug#end()
 
 colorscheme gruvbox
 set background=dark
-
 set termguicolors
+
 lua << EOF
-require("bufferline").setup{
+require('bufferline').setup{
   options = {
-    separator_style = "slant"
+    close_command = "Bdelete! %d",
+    separator_style = "slant",
+    offsets = { { filetype = 'NvimTree', text = '', padding = 1 } }
   }
 }
 
 require('telescope').setup{}
 
+require('nvim-tree').setup{}
+
+require('toggleterm').setup{
+  open_mapping = [[<c-\>]],
+  direction = 'float',
+  float_opts = {
+    border = 'curved'
+  }
+}
 EOF
 
