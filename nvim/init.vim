@@ -81,7 +81,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'hrsh7th/cmp-nvim-lsp'
 call plug#end()
 
-colorscheme nordfox
+colorscheme gruvbox
 set background=dark
 set termguicolors
 
@@ -108,12 +108,14 @@ require('toggleterm').setup{
 }
 
 require('nvim-treesitter.configs').setup{
+  ensure_installed = { 'bash', 'cpp', 'css', 'scss', 'html', 'java', 'javascript', 'jsdoc', 'json', 'kotlin', 'lua', 'typescript', 'markdown' },
   highlight = {
     enable = true
   },
   rainbow = {
     enable = true,
-    extended_mode = true
+    extended_mode = true,
+    max_file_lines = 1000
   }
 }
 
