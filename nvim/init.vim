@@ -81,7 +81,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'hrsh7th/cmp-nvim-lsp'
 call plug#end()
 
-colorscheme gruvbox
+colorscheme nordfox
 set background=dark
 set termguicolors
 
