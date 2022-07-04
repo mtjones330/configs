@@ -1,8 +1,9 @@
 " Requirements:
 " - vim-plug (https://github.com/junegunn/vim-plug#neovim)
 " - a nerd font (Caskaydia Cove Nerd Font Complete Mono)
-" - ripgrep (sudo apt install ripgrep)
-
+" - ripgrep (apt install ripgrep)
+" - unzip (apt install unzip)
+" - clang (apt install clang)
 syntax on
 
 set nu
@@ -81,7 +82,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'hrsh7th/cmp-nvim-lsp'
 call plug#end()
 
-colorscheme nightfox
+let g:gruvbox_contrast_dark='medium'
+colorscheme gruvbox
 set background=dark
 set termguicolors
 
@@ -163,22 +165,14 @@ local lsp_flags = {
   -- This is the default in Nvim 0.7+
   debounce_text_changes = 150,
 }
-require('lspconfig')['pyright'].setup{
-    on_attach = on_attach,
-    flags = lsp_flags,
-}
+
+require('lspconfig').clangd.setup{}
+
 require('lspconfig')['tsserver'].setup{
     on_attach = on_attach,
     flags = lsp_flags,
 }
-require('lspconfig')['rust_analyzer'].setup{
-    on_attach = on_attach,
-    flags = lsp_flags,
-    -- Server-specific settings...
-    settings = {
-      ["rust-analyzer"] = {}
-    }
-}
 
 EOF
+
 
