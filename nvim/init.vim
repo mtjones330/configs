@@ -4,6 +4,7 @@
 " - ripgrep (apt install ripgrep)
 " - unzip (apt install unzip)
 " - clang (apt install clang)
+
 syntax on
 
 set nu
@@ -24,8 +25,6 @@ set noswapfile
 set nobackup
 set undodir=~/.vim/undodir
 set undofile
-set ruler
-set laststatus=2
 set signcolumn=yes
 set colorcolumn=120
 set scrolloff=8
