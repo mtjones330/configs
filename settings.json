@@ -12,7 +12,6 @@
   "editor.suggestSelection": "first",
   "editor.renderWhitespace": "none",
   "editor.cursorSurroundingLines": 8,
-  "editor.rulers": [ 120 ],
 
   "workbench.startupEditor": "newUntitledFile",
   "breadcrumbs.enabled": false,
