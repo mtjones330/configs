@@ -12,6 +12,7 @@
   "editor.suggestSelection": "first",
   "editor.renderWhitespace": "none",
   "editor.cursorSurroundingLines": 8,
+  "editor.rulers": [ 120 ],
 
   "workbench.startupEditor": "newUntitledFile",
   "breadcrumbs.enabled": false,
@@ -95,11 +96,11 @@
       "commands": ["workbench.action.nextEditor"]
     },
     {
-      "before": ["<C-H>"],
+      "before": ["<C-h>"],
       "commands": ["workbench.action.moveEditorLeftInGroup"]
     },
     {
-      "before": ["<C-L>"],
+      "before": ["<C-l>"],
       "commands": ["workbench.action.moveEditorRightInGroup"]
     },
 
@@ -163,6 +164,10 @@
       "before": ["<leader>", "f", "f"],
       "commands": ["workbench.action.quickOpen"]
     },
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    }
   ],
   "vim.visualModeKeyBindings": [
     {
@@ -177,6 +182,12 @@
   "vim.handleKeys": {
     "<C-c>": false,
     "<C-v>": false,
-    "<C-x>": false
-  },
+    "<C-x>": false,
+    "<C-r>": true,
+    "<C-o>": true,
+    "<C-i>": true,
+    "<C-h>": true,
+    "<C-l>": true
+  }
 }
+
