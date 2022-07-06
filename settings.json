@@ -1,181 +1,182 @@
 {
-	"files.trimTrailingWhitespace": true,
-	"editor.fontSize": 14,
-	"workbench.startupEditor": "newUntitledFile",
-	"[typescript]": {
-			"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"breadcrumbs.enabled": true,
-	"editor.minimap.enabled": false,
-	"[html]": {
-			"editor.defaultFormatter": "vscode.html-language-features"
-	},
-	"editor.parameterHints.enabled": false,
-	"[javascript]": {
-			"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"editor.multiCursorModifier": "ctrlCmd",
+  "editor.lineNumbers": "relative",
+  "editor.fontSize": 14,
+  "editor.minimap.enabled": false,
+  "editor.parameterHints.enabled": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.tabSize": 2,
+  "editor.cursorStyle": "line",
+  "editor.insertSpaces": false,
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "editor.wordWrap": "off",
+  "editor.suggestSelection": "first",
+  "editor.renderWhitespace": "none",
+  "editor.cursorSurroundingLines": 8,
 
-	"git.autofetch": false,
-	"workbench.activityBar.visible": true,
-	"workbench.editor.enablePreview": false,
+  "workbench.startupEditor": "newUntitledFile",
+  "breadcrumbs.enabled": false,
 
-	"vim.leader": " ",
-	"vim.insertModeKeyBindings": [
-			{
-					"before": ["k", "j"],
-					"after": ["<Esc>"]
-			}
-	],
-	"vim.normalModeKeyBindings": [
-			{
-					"before": ["<leader>", "v"],
-					"after": ["<C-w>", "v"]
-			},
-			{
-					"before": ["<leader>", "s"],
-					"after": ["<C-w>", "s"]
-			},
-			{
-					"before": ["<leader>", "h"],
-					"after": ["<C-w>", "h"]
-			},
-			{
-					"before": ["<leader>", "j"],
-					"after": ["<C-w>", "j"]
-			},
-			{
-					"before": ["<leader>", "k"],
-					"after": ["<C-w>", "k"]
-			},
-			{
-					"before": ["<leader>", "l"],
-					"after": ["<C-w>", "l"]
-			},
-			{
-					"before": ["Z", "Z"],
-					"commands": ["workbench.action.files.save", "workbench.action.closeActiveEditor"]
-			},
-			{
-					"before": ["<leader>", "a"],
-					"commands": ["workbench.action.closeEditorsInGroup"]
-			},
-			{
-					"before": ["<leader>", "+"],
-					"commands": ["workbench.action.increaseViewSize"]
-			},
-			{
-					"before": ["<leader>", "-"],
-					"commands": ["workbench.action.decreaseViewSize"]
-			},
-			{
-					"before": ["J"],
-					"commands": ["editor.action.moveLinesDownAction"]
-			},
-			{
-					"before": ["K"],
-					"commands": ["editor.action.moveLinesUpAction"]
-			},
-			{
-					"before": ["g", "d"],
-					"commands": ["editor.action.revealDefinition"]
-			},
-			{
-					"before": ["<leader>", "w"],
-					"commands": ["workbench.action.files.save"]
-			},
-			{
-					"before": ["<leader>", "."],
-					"commands": ["editor.action.quickFix"]
-			},
-			{
-					"before": ["<leader>", "t"],
-					"commands": ["extension.switchTemplate"]
-			},
-			{
-					"before": ["<leader>", "o"],
-					"commands": ["workbench.action.closeOtherEditors"]
-			},
-			{
-					"before" : ["u"],
-					"commands" : [
-							"undo"
-					]
-			},
-			{
-					"before" : ["<C-r>"],
-					"commands" : [
-							"redo"
-					]
-			},
-			{
-					"before": ["<leader>", "r"],
-					"commands": ["editor.action.rename"]
-			},
-			{
-					"before": ["<leader>", "b"],
-					"commands": ["workbench.action.tasks.build"]
-			},
-			{
-					"before": ["<leader>", "x"],
-					"commands": ["workbench.action.closeOtherEditors"]
-			},
-			{
-					"before": ["<leader>", "'" ],
-					"after": ["c", "i", "w", "'", "<C-r>", "\"", "<Esc>"]
-			},
-			{
-					"before": ["<leader>", "\"" ],
-					"after": ["c", "i", "w", "\"", "<C-r>", "\"", "<Esc>"]
-			}
-	],
-	"vim.visualModeKeyBindings": [
-			{
-					"before": ["J"],
-					"commands": ["editor.action.moveLinesDownAction"]
-			},
-			{
-					"before": ["K"],
-					"commands": ["editor.action.moveLinesUpAction"]
-			},
-			{
-					"before": ["<leader>", "'" ],
-					"after": ["c", "'", "<C-r>", "\"", "<Esc>"]
-			},
-			{
-					"before": ["<leader>", "\"" ],
-					"after": ["c", "\"", "<C-r>", "\"", "<Esc>"]
-			}
-	],
+  "files.trimTrailingWhitespace": true,
+  "files.autoSave": "onFocusChange",
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
 
-	"files.exclude": {
-			"**/node_modules": true,
-			"**/.classpath": true,
-			"**/.project": true,
-			"**/.settings": true,
-			"**/.factorypath": true
-	},
-	"editor.lineNumbers": "relative",
-	"typescript.preferences.quoteStyle": "single",
-	"[json]": {
-			"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"editor.renderWhitespace": "none",
-	"window.zoomLevel": 0,
-	"angular.experimental-ivy": true,
-	"editor.cursorStyle": "line",
-	"editor.insertSpaces": false,
-	"editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
-	"editor.wordWrap": "off",
-	"editor.suggestSelection": "first",
-	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-	"editor.tabSize": 2,
-	"cSpell.userWords": [
-			"formcontrolname",
-			"formgroupname",
-			"setpoint",
-			"timestep"
-	],
-	"diffEditor.ignoreTrimWhitespace": false,
-	"security.workspace.trust.untrustedFiles": "open",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "git.confirmSync": false,
+  "markdown-pdf.emoji": false,
+  "markdown-pdf.displayHeaderFooter": false,
+
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.preferences.quoteStyle": "single",
+
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "vim.leader": " ",
+
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["k", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+
+  "vim.normalModeKeyBindings": [
+
+    // Splits
+    {
+      "before": ["<leader>", "v"],
+      "after": ["<C-w>", "v"]
+    },
+    {
+      "before": ["<leader>", "s"],
+      "after": ["<C-w>", "s"]
+    },
+    {
+      "before": ["<leader>", "h"],
+      "after": ["<C-w>", "h"]
+    },
+    {
+      "before": ["<leader>", "j"],
+      "after": ["<C-w>", "j"]
+    },
+    {
+      "before": ["<leader>", "k"],
+      "after": ["<C-w>", "k"]
+    },
+    {
+      "before": ["<leader>", "l"],
+      "after": ["<C-w>", "l"]
+    },
+
+    // Tabs
+    {
+      "before": ["H"],
+      "commands": ["workbench.action.previousEditor"]
+    },
+    {
+      "before": ["L"],
+      "commands": ["workbench.action.nextEditor"]
+    },
+    {
+      "before": ["<C-H>"],
+      "commands": ["workbench.action.moveEditorLeftInGroup"]
+    },
+    {
+      "before": ["<C-L>"],
+      "commands": ["workbench.action.moveEditorRightInGroup"]
+    },
+
+    {
+      "before": ["Z", "Z"],
+      "commands": ["workbench.action.files.save", "workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["<leader>", "a"],
+      "commands": ["workbench.action.closeEditorsInGroup"]
+    },
+    {
+      "before": ["<leader>", "+"],
+      "commands": ["workbench.action.increaseViewSize"]
+    },
+    {
+      "before": ["<leader>", "-"],
+      "commands": ["workbench.action.decreaseViewSize"]
+    },
+
+    {
+      "before": ["J"],
+      "commands": ["editor.action.moveLinesDownAction"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["editor.action.moveLinesUpAction"]
+    },
+
+    {
+      "before": ["g", "d"],
+      "commands": ["editor.action.revealDefinition"]
+    },
+
+    {
+      "before": ["<leader>", "w"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": ["<leader>", "q"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+
+    {
+      "before": ["<leader>", "."],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["<leader>", "t"],
+      "commands": ["extension.switchTemplate"]
+    },
+    {
+      "before": ["<leader>", "o"],
+      "commands": ["workbench.action.closeOtherEditors"]
+    },
+    {
+      "before": ["<leader>", "r"],
+      "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["<leader>", "f", "f"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["J"],
+      "commands": ["editor.action.moveLinesDownAction"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["editor.action.moveLinesUpAction"]
+    }
+  ],
+  "vim.handleKeys": {
+    "<C-c>": false,
+    "<C-v>": false,
+    "<C-x>": false
+  },
 }
