@@ -44,10 +44,10 @@ keymap("n", "<C-h>", ":BufferLineMovePrev<CR>", opts)
 keymap("n", "<leader>c", "<cmd>nohlsearch<CR>", opts)
 
 -- Close buffers
-keymap("n", "<leader>q", "<cmd>Bdelete!<CR>", opts)
+keymap("n", "<S-q>", "<cmd>Bdelete!<CR>", opts)
 
 -- Save buffers
-keymap("n", "<leader>w", "<cmd>w<CR>", opts)
+keymap("n", "<S-w>", "<cmd>w<CR>", opts)
 
 
 -- Insert --
