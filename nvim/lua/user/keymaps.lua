@@ -1,5 +1,6 @@
 -- Shorten function name
 local keymap = vim.keymap.set
+
 -- Silent keymap option
 local opts = { silent = true }
 
@@ -15,8 +16,13 @@ vim.g.mapleader = " "
 --   term_mode = "t",
 --   command_mode = "c",
 
+
 -- Normal --
+
 -- Better window navigation
+keymap("n", "<leader>v", "<C-w>v", opts)
+keymap("n", "<leader>s", "<C-w>s", opts)
+
 keymap("n", "<leader>h", "<C-w>h", opts)
 keymap("n", "<leader>j", "<C-w>j", opts)
 keymap("n", "<leader>k", "<C-w>k", opts)
@@ -35,22 +41,31 @@ keymap("n", "<C-l>", ":BufferLineMoveNext<CR>", opts)
 keymap("n", "<C-h>", ":BufferLineMovePrev<CR>", opts)
 
 -- Clear highlights
--- keymap("n", "<leader>h", "<cmd>nohlsearch<CR>", opts)
+keymap("n", "<leader>h", "<cmd>nohlsearch<CR>", opts)
 
 -- Close buffers
 keymap("n", "<leader>q", "<cmd>Bdelete!<CR>", opts)
 
--- Better paste
-keymap("v", "p", '"_dP', opts)
+-- Save buffers
+keymap("n", "<leader>w", "<cmd>w<CR>", opts)
+
 
 -- Insert --
+
 -- Press kj fast to enter
 keymap("i", "kj", "<ESC>", opts)
 
 -- Visual --
+-- Better paste
+keymap("v", "p", '"_dP', opts)
+
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
+
+keymap("v", "K", "<cmd>m '<-2<CR>gv")
+keymap("v", "J", "<cmd>m '>+1<CR>gv")
+
 
 -- Plugins --
 
@@ -58,10 +73,15 @@ keymap("v", ">", ">gv", opts)
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 
 -- Telescope
-keymap("n", "ff", ":Telescope find_files<CR>", opts)
-keymap("n", "fg", ":Telescope live_grep<CR>", opts)
-keymap("n", "fp", ":Telescope projects<CR>", opts)
-keymap("n", "fb", ":Telescope buffers<CR>", opts)
+keymap("n", "<leader>ff", ":Telescope find_files<CR>", opts)
+keymap("n", "<leader>fg", ":Telescope live_grep<CR>", opts)
+keymap("n", "<leader>fp", ":Telescope projects<CR>", opts)
+keymap("n", "<leader>fb", ":Telescope buffers<CR>", opts)
+
+keymap("n", "gd", ":Telescope lsp_definitions<CR>", opts)
+keymap("n", "gr", ":Telescope lsp_references<CR>", opts)
+keymap("n", "gi", ":Telescope lsp_implementations<CR>", opts)
+
 
 -- Git
 keymap("n", "<leader>gg", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", opts)

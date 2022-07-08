@@ -12,8 +12,11 @@
   "editor.suggestSelection": "first",
   "editor.renderWhitespace": "none",
   "editor.cursorSurroundingLines": 8,
+  "editor.fontFamily": "'Hack Nerd Font'",
 
+  "workbench.colorTheme": "Tokyo Night Storm",
   "workbench.startupEditor": "newUntitledFile",
+
   "breadcrumbs.enabled": false,
 
   "files.trimTrailingWhitespace": true,
