@@ -9,16 +9,15 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
   end,
 })
 
--- Remove statusline and tabline when in Alpha
---vim.api.nvim_create_autocmd({ "User" }, {
---  pattern = { "AlphaReady" },
---  callback = function()
---    vim.cmd [[
---      set showtabline=0 | autocmd BufUnload <buffer> set showtabline=2
---      set laststatus=0 | autocmd BufUnload <buffer> set laststatus=3
---    ]]
---  end,
---})
+-- Remove tabline when in Alpha
+vim.api.nvim_create_autocmd({ "User" }, {
+ pattern = { "AlphaReady" },
+ callback = function()
+   vim.cmd [[
+     set showtabline=0 | autocmd BufUnload <buffer> set showtabline=2
+   ]]
+ end,
+})
 
 -- Set wrap and spell in markdown and gitcommit
 vim.api.nvim_create_autocmd({ "FileType" }, {
@@ -44,3 +43,4 @@ vim.api.nvim_create_autocmd({ "TextYankPost" }, {
     vim.highlight.on_yank { higroup = "Visual", timeout = 200 }
   end,
 })
+
