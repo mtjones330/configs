@@ -64,5 +64,5 @@ nvim_tree.setup {
         { key = "v", cb = tree_cb "vsplit" },
       },
     },
-  },
+  }
 }
