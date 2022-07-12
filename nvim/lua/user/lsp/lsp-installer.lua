@@ -12,7 +12,8 @@ local servers = {
   "bashls",
   "jsonls",
   "yamlls",
-  "clangd"
+  "clangd",
+  "rust_analyzer"
 }
 
 lsp_installer.setup()
