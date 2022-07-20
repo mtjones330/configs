@@ -1,0 +1,3 @@
+[submodule "wofi"]
+	path = wofi
+	url = https://github.com/dracula/wofi.git
