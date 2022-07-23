@@ -3,8 +3,8 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
   pattern = { "qf", "help", "man", "lspinfo", "spectre_panel", "lir" },
   callback = function()
     vim.cmd [[
-      nnoremap <silent> <buffer> q :close<CR> 
-      set nobuflisted 
+      nnoremap <silent> <buffer> q :close<CR>
+      set nobuflisted
     ]]
   end,
 })
@@ -24,7 +24,7 @@ vim.api.nvim_create_autocmd({ "User" }, {
 vim.api.nvim_create_autocmd({ "FileType" }, {
   pattern = { "gitcommit", "markdown" },
   callback = function()
-    vim.opt_local.wrap = true
+    vim.opt_local.wrap = false
     vim.opt_local.spell = true
   end,
 })
@@ -45,3 +45,9 @@ vim.api.nvim_create_autocmd({ "TextYankPost" }, {
   end,
 })
 
+-- Remove trailing whitespace before buffer write
+vim.api.nvim_create_autocmd({ "BufWritePre "}, {
+  callback = function()
+    vim.cmd "%s/\\s\\+$//e"
+  end
+})
