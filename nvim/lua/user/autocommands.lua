@@ -45,9 +45,9 @@ vim.api.nvim_create_autocmd({ "TextYankPost" }, {
   end,
 })
 
--- Remove trailing whitespace before buffer write
--- vim.api.nvim_create_autocmd({ "BufWritePre"}, {
---   callback = function()
---     vim.cmd "%s/\\s\\+$//e"
---   end
--- })
+-- Remove trailing whitespace on InsertLeave
+vim.api.nvim_create_autocmd({ "InsertLeave"}, {
+  callback = function()
+    vim.cmd "%s/\\s\\+$//e"
+  end
+})
