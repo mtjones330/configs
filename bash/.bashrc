@@ -98,3 +98,4 @@ export NVM_DIR="$HOME/.nvm"
 
 bind '"kj":"\e"'
 stty -ixon
+alias lg='lazygit'
