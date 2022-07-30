@@ -22,12 +22,12 @@ vim.g.mapleader = " "
 -- Better window navigation
 keymap("n", "<leader>v", "<C-w>v", opts)
 keymap("n", "<leader>s", "<C-w>s", opts)
+keymap("n", "<leader>q", "<cmd>q<CR>", opts)
 
 keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
-keymap("n", "<leader>q", "<cmd>q<CR>", opts)
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize +2<cr>", opts)
