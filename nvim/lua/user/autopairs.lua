@@ -6,7 +6,8 @@ end
 
 npairs.setup {
   check_ts = true, -- treesitter integration
-  disable_filetype = { "TelescopePrompt" }
+  disable_filetype = { "TelescopePrompt" },
+  ignored_next_char = "[%w%.]" -- will ignore alphanumeric and `.` symbol
 }
 
 local cmp_autopairs = require "nvim-autopairs.completion.cmp"
