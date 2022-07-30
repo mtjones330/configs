@@ -64,9 +64,15 @@ keymap("v", "p", '"_dP', opts)
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
--- Move text up and down  
+-- Move text up and down
 keymap("v", "K", ":m '<-2<CR>gv=gv")
 keymap("v", "J", ":m '>+1<CR>gv=gv")
+
+-- Jump to end of word
+keymap("i", "<C-e>", "<ESC>Ea", opts)
+
+-- Jump to begining of word
+keymap("i", "<C-b>", "<ESC>Bi", opts)
 
 -- Plugins --
 
