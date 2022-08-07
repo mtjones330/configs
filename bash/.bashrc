@@ -22,6 +22,7 @@ export BASH_IT="/home/matthew/.bash_it"
 # location /.bash_it/themes/
 export BASH_IT_THEME='bobby'
 
+
 # Some themes can show whether `sudo` has a current token or not.
 # Set `$THEME_CHECK_SUDO` to `true` to check every prompt:
 #THEME_CHECK_SUDO='true'
@@ -50,7 +51,7 @@ export TODO="t"
 #BASH_IT_PROJECT_PATHS="${HOME}/Projects:/Volumes/work/src"
 
 # Set this to false to turn off version control status checking within the prompt for all themes
-export SCM_CHECK=true
+export SCM_CHECK=false
 # Set to actual location of gitstatus directory if installed
 #export SCM_GIT_GITSTATUS_DIR="$HOME/gitstatus"
 # per default gitstatus uses 2 times as many threads as CPU cores, you can change this here if you must
