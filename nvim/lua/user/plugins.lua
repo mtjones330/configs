@@ -87,6 +87,8 @@ return packer.startup(function(use)
     run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
   }
 
+  use 'nvim-treesitter/nvim-treesitter-context'
+
   -- Git
   use { "lewis6991/gitsigns.nvim" }
 
