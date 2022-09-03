@@ -42,7 +42,7 @@ keymap("n", "<", ":BufferLineMovePrev<CR>", opts)
 keymap("n", ">", ":BufferLineMoveNext<CR>", opts)
 
 -- Clear highlights
-keymap("n", "<leader>h", "<cmd>nohlsearch<CR>", opts)
+keymap("n", "<leader>c", "<cmd>nohlsearch<CR>", opts)
 
 -- Close buffers
 keymap("n", "<S-q>", "<cmd>Bdelete!<CR>", opts)
