@@ -38,9 +38,8 @@ packer.init {
   },
 }
 
--- Install your plugins here
 return packer.startup(function(use)
-  -- My plugins here
+
   use { "wbthomason/packer.nvim" } -- Have packer manage itself
   use { "nvim-lua/plenary.nvim" } -- Useful lua functions used by lots of plugins
   use { "windwp/nvim-autopairs" } -- Autopairs, integrates with both cmp and treesitter
@@ -76,7 +75,7 @@ return packer.startup(function(use)
   use { "neovim/nvim-lspconfig" } -- enable LSP
   use { "williamboman/nvim-lsp-installer" } -- simple to use language server installer
   use { "jose-elias-alvarez/null-ls.nvim" } -- for formatters and linters
-  use { "RRethy/vim-illuminate", commit = "27f6ef135a88d9410a33cf92fc47f5c018df552c" }
+  use { "RRethy/vim-illuminate" }
 
   -- Telescope
   use { "nvim-telescope/telescope.nvim" }
