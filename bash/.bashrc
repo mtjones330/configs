@@ -100,3 +100,5 @@ export NVM_DIR="$HOME/.nvm"
 bind '"kj":"\e"'
 stty -ixon
 alias lg='lazygit'
+
+export _JAVA_AWT_WM_NONREPARENTING=1
