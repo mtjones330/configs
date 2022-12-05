@@ -56,7 +56,7 @@ return packer.startup(function(use)
   use { "lukas-reineke/indent-blankline.nvim" }
   use { "goolord/alpha-nvim" }
   use { "Pocco81/auto-save.nvim" }
-
+  use { "softoika/ngswitcher.vim" }
   -- Colorschemes
   use { "folke/tokyonight.nvim" }
 

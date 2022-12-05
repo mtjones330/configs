@@ -89,7 +89,6 @@ keymap("n", "gd", ":Telescope lsp_definitions<CR>", opts)
 keymap("n", "gr", ":Telescope lsp_references<CR>", opts)
 keymap("n", "gi", ":Telescope lsp_implementations<CR>", opts)
 
-
 -- Git
 keymap("n", "<leader>gg", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", opts)
 
@@ -107,3 +106,9 @@ keymap("n", "<leader>dr", "<cmd>lua require'dap'.repl.toggle()<cr>", opts)
 keymap("n", "<leader>dl", "<cmd>lua require'dap'.run_last()<cr>", opts)
 keymap("n", "<leader>du", "<cmd>lua require'dapui'.toggle()<cr>", opts)
 keymap("n", "<leader>dt", "<cmd>lua require'dap'.terminate()<cr>", opts)
+
+keymap("n", "<leader>u", ":<C-u>NgSwitchHTML<CR>", opts)
+keymap("n", "<leader>i", ":<C-u>NgSwitchTS<CR>", opts)
+keymap("n", "<leader>o", ":<C-u>NgSwitchCSS<CR>", opts)
+keymap("n", "<leader>p", ":<C-u>NgSwitchSpec<CR>", opts)
+
