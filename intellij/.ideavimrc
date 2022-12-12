@@ -11,10 +11,10 @@ imap kj <ESC>
 nnoremap <leader>v <C-w>v
 nnoremap <leader>s <C-w>s
 
-nnoremap <s-q> :q<Cr>
+nnoremap <s-q> :q<CR>
 
-nnoremap <s-l> :action NextTab<Cr>
-nnoremap <s-h> :action PreviousTab<Cr>
+nnoremap <s-l> :action NextTab<CR>
+nnoremap <s-h> :action PreviousTab<CR>
 
 nnoremap <c-h> <C-w>h
 nnoremap <c-j> <C-w>j
@@ -24,3 +24,7 @@ nnoremap <c-l> <C-w>l
 nnoremap <leader>r :action RenameElement<CR>
 nnoremap gi :action GotoImplementation<CR>
 nnoremap gd :action GotoDeclaration<CR>
+
+nnoremap <c-o> :action Back<CR>
+nnoremap <c-i> :action Forward<CR>
+
