@@ -14,7 +14,7 @@ toggleterm.setup({
 	persist_size = true,
 	direction = "float",
 	close_on_exit = true,
-	shell = "/opt/homebrew/bin/bash --login",
+	shell = "bash --login",
 	float_opts = {
 		border = "curved",
 	},
