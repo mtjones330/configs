@@ -1,6 +1,4 @@
 {
-  "editor.lineNumbers": "relative",
-  "editor.fontSize": 13,
   "editor.minimap.enabled": false,
   "editor.parameterHints.enabled": false,
   "editor.multiCursorModifier": "ctrlCmd",
@@ -12,11 +10,8 @@
   "editor.suggestSelection": "first",
   "editor.renderWhitespace": "none",
   "editor.cursorSurroundingLines": 8,
-  "editor.fontFamily": "'Hack Nerd Font Mono'",
 
-  "workbench.colorTheme": "Tokyo Night Storm",
   "workbench.startupEditor": "newUntitledFile",
-
   "breadcrumbs.enabled": false,
 
   "files.trimTrailingWhitespace": true,
@@ -136,17 +131,9 @@
       "before": ["g", "d"],
       "commands": ["editor.action.revealDefinition"]
     },
-    {
-      "before": ["g", "l"],
-      "commands": ["editor.action.marker.next"]
-    },
 
     {
-      "before": ["<leader>", "w"],
-      "commands": ["workbench.action.files.save"]
-    },
-    {
-      "before": ["<leader>", "q"],
+      "before": ["Q"],
       "commands": ["workbench.action.closeActiveEditor"]
     },
 
@@ -171,8 +158,24 @@
       "commands": ["workbench.action.quickOpen"]
     },
     {
+      "before": ["<leader>", "f", "t"],
+      "commands": ["workbench.action.findInFiles"]
+    },
+    {
       "before": ["<leader>", "e"],
       "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "before": ["<leader>", "k"],
+      "commands": ["editor.action.showHover"]
+    },
+    {
+      "before": ["<leader>", "l", "j"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["<leader>", "l", "k"],
+      "commands": ["editor.action.marker.prev"]
     }
   ],
   "vim.visualModeKeyBindings": [
@@ -194,6 +197,11 @@
     "<C-i>": true,
     "<C-h>": true,
     "<C-l>": true
-  }
+  },
+  "editor.fontFamily": "'Hack NF'",
+  "workbench.colorTheme": "Tokyo Night Storm",
+  "editor.accessibilitySupport": "off",
+  "java.inlayHints.parameterNames.enabled": "none",
+  "editor.lineNumbers": "relative",
+  "java.debug.settings.enableRunDebugCodeLens": false
 }
-
