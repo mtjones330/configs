@@ -10,9 +10,18 @@
   "editor.suggestSelection": "first",
   "editor.renderWhitespace": "none",
   "editor.cursorSurroundingLines": 8,
+  "editor.fontFamily": "Hack NF",
+  "editor.accessibilitySupport": "off",
+  "editor.lineNumbers": "relative",
 
+  "workbench.colorTheme": "Tokyo Night Storm",
   "workbench.startupEditor": "newUntitledFile",
+
   "breadcrumbs.enabled": false,
+
+  "java.inlayHints.parameterNames.enabled": "none",
+  "java.debug.settings.enableRunDebugCodeLens": false,
+
 
   "files.trimTrailingWhitespace": true,
   "files.autoSave": "onFocusChange",
@@ -46,12 +55,15 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
+  // vim
+
   "vim.leader": " ",
 
   "vim.insertModeKeyBindings": [
     {
       "before": ["k", "j"],
-      "after": ["<Esc>"]
+      "after": ["<Esc>"],
+      "commands": ["workbench.action.files.save"]
     }
   ],
 
@@ -100,10 +112,25 @@
       "before": ["<C-l>"],
       "commands": ["workbench.action.moveEditorRightInGroup"]
     },
-
     {
-      "before": ["Z", "Z"],
-      "commands": ["workbench.action.files.save", "workbench.action.closeActiveEditor"]
+      "before": ["u"],
+      "after": [],
+      "commands": [
+        {
+          "command": "undo",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["<C-r>"],
+      "after": [],
+      "commands": [
+        {
+          "command": "redo",
+          "args": []
+        }
+      ]
     },
     {
       "before": ["<leader>", "a"],
@@ -159,7 +186,7 @@
     },
     {
       "before": ["<leader>", "f", "t"],
-      "commands": ["workbench.action.findInFiles"]
+      "commands": ["workbench.action.findInFiles"],
     },
     {
       "before": ["<leader>", "e"],
@@ -176,6 +203,10 @@
     {
       "before": ["<leader>", "l", "k"],
       "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["<leader>", "/"],
+      "commands": ["editor.action.commentLine"]
     }
   ],
   "vim.visualModeKeyBindings": [
@@ -186,7 +217,12 @@
     {
       "before": ["K"],
       "commands": ["editor.action.moveLinesUpAction"]
+    },
+    {
+      "before": ["<leader>", "/"],
+      "commands": ["editor.action.commentLine"]
     }
+
   ],
   "vim.handleKeys": {
     "<C-c>": false,
@@ -197,11 +233,5 @@
     "<C-i>": true,
     "<C-h>": true,
     "<C-l>": true
-  },
-  "editor.fontFamily": "'Hack NF'",
-  "workbench.colorTheme": "Tokyo Night Storm",
-  "editor.accessibilitySupport": "off",
-  "java.inlayHints.parameterNames.enabled": "none",
-  "editor.lineNumbers": "relative",
-  "java.debug.settings.enableRunDebugCodeLens": false
+  }
 }
