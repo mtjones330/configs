@@ -51,11 +51,28 @@
   "vim.insertModeKeyBindings": [
     {
       "before": ["k", "j"],
-      "after": ["<Esc>"]
+      "after": ["<Esc>"],
+      "commands": ["work"]
     }
   ],
 
   "vim.normalModeKeyBindings": [
+    {
+      "before": ["u"],
+      "after": [],
+      "commands": [{
+          "command": "undo",
+          "args": []
+        }]
+    },
+    {
+      "before": ["<C-r>"],
+      "after": [],
+      "commands": [{
+          "command": "redo",
+          "args": []
+        }]
+    },
 
     // Splits
     {
@@ -198,10 +215,12 @@
     "<C-h>": true,
     "<C-l>": true
   },
-  "editor.fontFamily": "'Hack NF'",
+  "editor.fontFamily": "Hack Nerd Font Mono",
   "workbench.colorTheme": "Tokyo Night Storm",
   "editor.accessibilitySupport": "off",
   "java.inlayHints.parameterNames.enabled": "none",
   "editor.lineNumbers": "relative",
-  "java.debug.settings.enableRunDebugCodeLens": false
+  "java.debug.settings.enableRunDebugCodeLens": false,
+  "terminal.integrated.fontFamily": "Hack Nerd Font Mono",
+  "editor.fontSize": 13
 }
