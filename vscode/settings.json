@@ -241,5 +241,9 @@
     "<C-i>": true,
     "<C-h>": true,
     "<C-l>": true
-  }
+  },
+  "markdown-mermaid.languages": [
+    "mermaid"
+  ],
+  "markdown.preview.scrollEditorWithPreview": false
 }
